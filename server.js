@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
   useUnifiedTopology: true,
 });
 
-app.get('/', (req, res) => {
+app.get('/all', (req, res) => {
   EquipModel.find((err, item) => {
     if (err) return res.status(500).send(err);
     else {
