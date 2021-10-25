@@ -16,5 +16,5 @@ const bookSchema = new mongoose.Schema({
   image: { type: String, required: false },
 });
 
-const BookModel = mongoose.model('booksTable', bookSchema);
+const BookModel = mongoose.model('bestbooks', bookSchema);
 module.exports = BookModel;
