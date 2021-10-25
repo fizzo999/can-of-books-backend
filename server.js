@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
+mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -52,7 +52,7 @@ const equipSchema = new mongoose.Schema({
 });
 
 //Model -> Apply the schema to the collection
-const EquipModel = mongoose.model('ghostSmashEquip', equipSchema);
+const EquipModel = mongoose.model('bestbooks', equipSchema);
 
 // //Sample data entry
 // const sampleEntry = new EquipModel({
